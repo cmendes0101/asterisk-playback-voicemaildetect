@@ -12,10 +12,10 @@ By default will playback an audio file and if within 5 sec of answering the call
 Installation
 ============
 
-Copy the VoicemailDetect.c file in to your /ASTERISK-SRC/app/ directory.
-Configure asterisk and check `makemenuselect` that the VoicemailDetect module has been added to the list.
-Make and Make install.
-`VoicemailDetect()` should be available in the `show modules` command in asterisk CLI.
+1. Copy the VoicemailDetect.c file in to your /ASTERISK-SRC/app/ directory.
+2. Configure asterisk and check `makemenuselect` that the VoicemailDetect module has been added to the list.
+3. Make and Make install asterisk.
+4. `VoicemailDetect()` should be available in the `show modules` command in asterisk CLI.
 
 Syntax
 ======
@@ -24,8 +24,8 @@ Syntax
     
 Arguments
 ---------
-*filename - Audio file to playback
-*sil - If not specified, defaults to 1000. *Not really used*
-*min - If not specified, defaults to 100. *Not really used*
-*max - If not specified, defaults to 3000.
-*analysistime - If not specified, defaults to 5000.
+* filename - Audio file to playback
+* sil - If not specified, defaults to 1000. *Not really used*
+* min - If not specified, defaults to 100. *Not really used*
+* max - If not specified, defaults to 3000.
+* analysistime - If not specified, defaults to 5000.
